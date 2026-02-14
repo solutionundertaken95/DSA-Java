@@ -10,7 +10,7 @@ public class BinarySearch {
         int right = arr.length-1;
 
 
-        while(left < right){
+        while(left <= right){
 
             int mid = (left + right)/2;
 
@@ -29,14 +29,12 @@ public class BinarySearch {
     public static void main(String[] args) {
 
         int[] num = {2,4,6,8,10};
-        int target = 5;
+        int target = 4;
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!\n");
         System.out.printf("Binary Search\n");
 
         int index = binarySearch(num,target);
-        System.out.println(index);
         if(index == -1){
             System.out.println("Target not present in the list");
         }
