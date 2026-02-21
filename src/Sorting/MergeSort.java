@@ -68,6 +68,7 @@ public class MergeSort {
             k++;
         }
 
+        //the leftovers in the 2 array can be added as such in the array because the numbers left are anyways greater
         while(i<n1){
             nums[k] = larr[i];
             i++;
@@ -80,6 +81,11 @@ public class MergeSort {
             k++;
         }
     }
+
+//This goes on dividing the array until it becomes single objcts then, we start merging them one by one
+    //while merging the objects they will be in the form of arrays, so the first object from the first array is compared with the first object of the second array
+    //if the first object is less, then it is added in the first position of the array else vice versa.
+
 
 
 }
