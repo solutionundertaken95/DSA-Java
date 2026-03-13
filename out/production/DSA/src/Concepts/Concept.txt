@@ -1,0 +1,46 @@
+	Final Output : 120
+
+	int recursionFactorial(int n) {
+            // Write your code here...
+            if(n==0 || n==1)
+                return 1;
+            return n * recursionFactorial(n-1);   5 * recursionFactorial(4)
+        }													24
+
+    	recursionFactorial(4)
+    	
+    	    int recursionFactorial(int n) {
+            // Write your code here...
+            if(n==0 || n==1)
+                return 1;
+            return n * recursionFactorial(n-1);   4 * recursionFactorial(3)
+        }													6
+
+
+    		recursionFactorial(3)
+
+    	    int recursionFactorial(int n) {
+            // Write your code here...
+            if(n==0 || n==1)
+                return 1;
+            return n * recursionFactorial(n-1);   3 * recursionFactorial(2)
+        }												2
+
+
+    			recursionFactorial(2)
+
+    	    int recursionFactorial(int n) {
+            // Write your code here...
+            if(n==0 || n==1)
+                return 1;
+            return n * recursionFactorial(n-1);   2 * recursionFactorial(1)
+        }												1
+
+    				recursionFactorial(2)
+
+    	    int recursionFactorial(int n) {
+            // Write your code here...
+            if(n==0 || n==1)
+                return 1;         1
+            return n * recursionFactorial(n-1);//won't execute
+        }
