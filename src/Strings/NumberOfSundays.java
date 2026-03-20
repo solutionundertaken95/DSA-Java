@@ -31,14 +31,14 @@ public class NumberOfSundays {
         }
 
 
-        int count =0;
-        int rem = 6-i;
+        int count = 0;
 
-        if(n>=rem){
-            count = 1;
-            n = n - rem;
+// days to first Sunday
+        int daysToSunday = (6 - i + 7) % 7;
 
-            count+=n/7;
+// If first Sunday is within range
+        if (n > daysToSunday) {
+            count = 1 + (n - daysToSunday - 1) / 7;
         }
 
         System.out.println("The Number of Sundays are : " + count);
